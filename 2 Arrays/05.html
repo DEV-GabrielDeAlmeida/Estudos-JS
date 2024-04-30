@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Ex: 05</title>
+</head>
+<script>
+    //05)Return last n array elements
+    //Write a function that takes an array (a) and a number (n).
+    //Its should return the last 'n' elements of 'a'
+
+    function lastN(a, n) {
+        //return a.slice(length - n)
+        return a.slice(- n)
+    }
+    console.log(lastN([1, 2, 3, 4, 5], 2))
+    console.log(lastN([1, 2, 3], 6))
+    console.log(lastN([1, 2, 3, 4, 5, 6, 7, 8], 3))
+</script>
+
+</html>

@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Ex: 06</title>
+</head>
+<script>
+    //06) Remove a specific array element
+    //Takes an array(a) and a value(b)
+    //Remove all elements equal to 'b' from the array. return the filtered
+
+    function removeB(a, b) {
+        return a.filter(a => a !== b)
+    }
+    console.log(removeB([1, 2, 3], 2))
+    console.log(removeB([1, 2, '2'], '2'))
+    console.log(removeB([false, '2', 1], false))
+</script>
+
+</html>

@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Ex:14</title>
+</head>
+<script>
+    //14)Check if all array elements are equal
+
+    // arrEqual = (arr) => arr.reduce((a, c) => a === c ? a : false)
+    arrEqual = (arr) => new Set(arr).size === 1;
+
+    console.log(arrEqual([true, true, true, true]))
+    console.log(arrEqual(['test', 'test', 'test']))
+    console.log(arrEqual([1, 1, 1, 2]))
+    console.log(arrEqual(['10', 10, 10, 10]))
+</script>
+
+</html>

@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Ex: 08</title>
+</head>
+<script>
+    //08)Count number of negative values in array
+    //Return the number of negative values in 'a'
+
+    // function contaNeg(a) {
+    //     return a
+    //         .toString()
+    //         .split(",")
+    //         .filter(a => a < 0)
+    //         .length
+    // }
+
+    //my
+    // contaNeg = (a) => a.toString().split(",").filter(a => a < 0).length
+
+    //author's
+    contaNeg = (a) => a.filter(a => a < 0).length
+
+    console.log(contaNeg([1, -2, 2, -4]))
+    console.log(contaNeg([0, 9, 1]))
+    console.log(contaNeg([4, -3, 2, 1, 0]))
+</script>
+
+</html>

@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Ex:13</title>
+</head>
+<script>
+    //13)Return the longest string from an array of strings
+
+    longStringArr = (arr) => arr.reduce((acc, crr) => acc.length > crr.length ? acc : crr)
+
+    console.log(longStringArr(["help", "me"]))
+    console.log(longStringArr(["i", "need", "candy"]))
+    console.log(longStringArr(["eu", "quero", "viajar"]))
+
+    // >> Pegando o segundo exemplo como explicação,
+    // • "i" é o acc(acumulador) , "need" é o crr(valor atual em comparação)
+    // • como need > i | "need" passa a ser o novo acc(valor acumulado)
+
+    // • agora a nova iteração sera feita com:
+    // • "candy" sendo o novo crr(novo valor que será comparado) | e "need" o acc(valor acumulado da última iteração)
+
+    // • agora "candy" passa a ser o acc(acumulador) pois >"need"
+    // • como não tem mais valores para serem o crr a iteração termina.
+
+</script>
+
+</html>
