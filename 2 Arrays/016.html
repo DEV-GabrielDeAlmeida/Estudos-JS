@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Ex:16</title>
+</head>
+<script>
+    //16) Sort array by object property
+    // Takes an array of objects as argument
+    // Sort the array by property b in ascending order
+
+    function sortArrObject(arr) {
+        const ordenarPorB = (x, y) => x.b - y.b
+        return arr.sort(ordenarPorB)
+    }
+
+    console.log("Ex01", sortArrObject([{ a: 1, b: 2 }, { a: 5, b: 4 }]))
+    console.log("Ex02", sortArrObject([{ a: 2, b: 10 }, { a: 5, b: 4 }]))
+    console.log("Ex03", sortArrObject([{ a: 1, b: 7 }, { a: 2, b: 1 }]))
+</script>
+
+</html>
